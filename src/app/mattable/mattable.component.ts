@@ -13,7 +13,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
     cor: string;
   }
   
-  /** Constants used to fill up our data base. */
+
   const CORES: string[] = [
     'preto',
     'roxo',
@@ -44,9 +44,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
     'Carimbo',
   ];
   
-  /**
-   * @title Data table with sorting, pagination, and filtering.
-   */
+
   @Component({
     selector: 'app-mattable',
     templateUrl: './mattable.component.html',
@@ -62,10 +60,10 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
     @ViewChild(MatSort) sort!: MatSort;
   
     constructor() {
-      // Create 100 users
+
       const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
   
-      // Assign the data to the data source for the table to render
+
       this.dataSource = new MatTableDataSource(users);
     }
   
@@ -84,7 +82,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
     }
   }
   
-  /** Builds and returns a new User. */
+
   function createNewUser(id: number): UserData {
     const item =
       ITENS[Math.round(Math.random() * (ITENS.length - 1))] +
