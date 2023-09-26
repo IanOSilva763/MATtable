@@ -42,6 +42,12 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
     'Pasta',
     'Adesivo',
     'Carimbo',
+    'livro',
+    'lapiseira',
+    'borracha',
+    'compasso',
+    'esquadro',
+    'lancheira',
   ];
   
 
